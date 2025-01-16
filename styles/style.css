@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+/* banner section styles for desktop  */
+.banner{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(229, 84, 115, 0.1);
+    width: 100%;
+    height:850px;
+}
+.banner-text{
+    width: 708px;
+    height: 506px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.banner-text h1{
+    font-weight: bolder;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.banner-text p{
+    color: #272727;
+    font-size: 18px;
+}
+.banner-text button{
+    background-color: #E55473;
+    width: 180px; 
+    height: 64px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 8px;
+    font-size:22px ;
+    font-weight: bold;
+    border: none;
+    transition: background-color .3s ease, transform 0.3s ease;
+}
+.banner-text button:hover {
+    background-color: rgba(245, 242, 242, 0.8); 
+    transform: scale(1.05); 
+    border: 1px solid #E55473;
+    color: #E55473;
+}
+
+.banner-img{
+    width: 685px;
+    height: 800px;
+    margin-top: 20px;
+}
+
+/* banner section styles for mobile  */
+@media screen and (max-width: 576px){
+    .banner{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        /* color: white; */
+        background-size: cover;
+        background: 
+        linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0.1), 
+            rgba(0, 0, 0, 0.2)  
+        ), 
+        url("../images/Flower Asset/pngwing 10.png");
+    }
+
+    .banner-text{
+        width: 100%;
+        margin: 10px;
+        padding:10px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 100px;
+        /* background-image: url("../images/Flower\ Asset/"); */
+        
+        
+    }
+    .banner-text h1{
+        font-weight: bolder;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        letter-spacing: 1px; 
+        line-height: 1.2;
+     }
+     
+     .banner-text p{
+        color: white;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        
+     }
+     
+    
+    .banner-text button{
+        margin-top: 100px;
+    }
+    .banner-img img{
+        width: 50%;
+        height: auto;
+        border: 2px solid black;    
+        display: none;
+    }
+
+    .banner-img{
+        display: none;
+    }
+    
+}
+
+
